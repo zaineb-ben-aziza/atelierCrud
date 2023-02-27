@@ -1,0 +1,22 @@
+
+<html>
+    <h1>okkkkkkkkkkkkkkk</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Classe</th>
+        </tr>
+        {% for etudiant in etudiants %}
+        <tr>
+            <td>{{ etudiant.id }}</td>
+            <td>{{ etudiant.nom }}</td>
+            <td>{{ etudiant.prenom }}</td>
+            <td>{{ etudiant.classe }}</td>
+        </tr>
+    {% endfor %}
+    
+    </table>
+</html>

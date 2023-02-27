@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+	<h1>Ajouter une classe</h1>
+
+	{{ form_start(form) }}
+	{{ form_widget(form) }}
+	<button type="submit" class="btn btn-primary">Ajouter</button>
+	{{ form_end(form) }}
+
+	<a href="{{ path('classroom_index') }}">Retour à la liste des classes</a>
+{% endblock %}
